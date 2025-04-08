@@ -1,0 +1,141 @@
+/* All common css start  */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+.rowf {
+  display: flex;
+}
+.rowj {
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  background: #070824;
+}
+/* All common css End  */
+
+/* HeaderPart css start  */
+#headerPart {
+  padding: 50px 0;
+}
+#headerPart .rowf {
+  align-items: center;
+}
+#headerPart .header_logo {
+  width: 20%;
+}
+#headerPart .menu {
+  width: 59%;
+  text-align: right;
+}
+#headerPart .btn {
+  width: 21%;
+  text-align: right;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 14px;
+  color: #d7d9ff;
+  padding: 0 15px;
+  position: relative;
+  transition: .4s;
+}
+.menu ul li a:hover{
+    color: #93F2FF;
+}
+.menu ul li a:hover::before {
+  width: 50px;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    #090925,
+    #1d304e,
+    #325878,
+    #4984a3,
+    #65b2cc,
+    #65b2cc,
+    #65b2cc,
+    #65b2cc,
+    #4984a3,
+    #325878,
+    #1d304e,
+    #090925
+  );
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  content: "";
+}
+.btn a{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    color: #93F2FF;
+    padding: 12px 25px;
+    margin-left: 10px;
+    border: 1px solid #93F2FF;
+    border-radius: 40px;
+
+}
+.btn a:hover{
+    color: #070721;
+    background: #93F2FF;
+}
+
+/* HeaderPart css End  */
+
+/* bannerPart css start  */
+ #bannerPart {
+
+
+ }
+ #bannerPart .rowf{
+    padding-top: 106px;
+background: url(../img/Banner\ Area.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: center;
+justify-content: center;
+
+ }
+ .bannerLeft{
+    width: 652px;
+ }
+
+/* bannerPart css End  */
+
+/* All common css start  */
+/* All common css End  */
+
+/* All common css start  */
+/* All common css End  */
+
+/* All common css start  */
+/* All common css End  */
+
+/* All common css start  */
+/* All common css End  */
+
+/* All common css start  */
+/* All common css End  */
