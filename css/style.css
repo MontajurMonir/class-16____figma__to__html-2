@@ -24,6 +24,10 @@ ol {
 body {
   background: #070824;
 }
+.row {
+  display: flex;
+  align-items: center;
+}
 /* All common css End  */
 
 /* HeaderPart css start  */
@@ -56,10 +60,10 @@ body {
   color: #d7d9ff;
   padding: 0 15px;
   position: relative;
-  transition: .4s;
+  transition: 0.4s;
 }
-.menu ul li a:hover{
-    color: #93F2FF;
+.menu ul li a:hover {
+  color: #93f2ff;
 }
 .menu ul li a:hover::before {
   width: 50px;
@@ -85,48 +89,196 @@ body {
   transform: translateX(-50%);
   content: "";
 }
-.btn a{
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    line-height: 100%;
-    color: #93F2FF;
-    padding: 12px 25px;
-    margin-left: 10px;
-    border: 1px solid #93F2FF;
-    border-radius: 40px;
-
+#headerPart .btn a {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  color: #93f2ff;
+  padding: 12px 25px;
+  margin-left: 10px;
+  border: 1px solid #93f2ff;
+  border-radius: 40px;
 }
-.btn a:hover{
-    color: #070721;
-    background: #93F2FF;
+#headerPart .btn a:hover {
+  color: #070721;
+  background: #93f2ff;
 }
 
 /* HeaderPart css End  */
 
 /* bannerPart css start  */
- #bannerPart {
+#bannerPart {
+}
+#bannerPart .rowf {
+  padding-top: 106px;
+  padding-left: 60px;
+  background: url(../img/Banner\ Area.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: space-between;
+}
+.bannerLeft {
+  width: 652px;
+}
+.bannerLeft h6 {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  color: #93f2ff;
+  margin-right: 40px;
+}
+.bannerLeft .social a {
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  border: 2px solid rgba(217, 217, 217, 0.1);
+  border-radius: 50%;
+  position: relative;
+}
+.bannerLeft .social a:hover {
+  background: rgba(148, 243, 255, 0.1);
+}
+.bannerLeft .social img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.bannerLeft h1 {
+  font-size: 74px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 130%;
+  color: #d6daf0;
+  padding-top: 10px;
+}
+.bannerLeft h1 span {
+  color: #93f2ff;
+}
+.bannerLeft .btn a {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #93f2ff;
+  padding: 21px 35px;
+  border: 2px solid rgba(217, 217, 217, 0.1);
+  border-radius: 40px;
+  margin: 50px 30px 100px 0;
+}
+.bannerLeft .btn a i {
+  color: #d6daf0;
+}
+.bannerLeft .btn a:hover {
+  background: #93f2ff;
+  color: #070721;
+}
+.bannerLeft .btn a:hover i {
+  background: #93f2ff;
+  color: #070721;
+}
+.bannerLeft .scroll p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: #d7d9ff;
+}
+.bannerLeft .scroll i {
+  padding: 8px 10px;
+  border: 2px solid rgba(217, 217, 217, 0.1);
+  border-radius: 50%;
+  color: #93f2ff;
+  margin-left: 5px;
 
- }
- #bannerPart .rowf{
-    padding-top: 106px;
-background: url(../img/Banner\ Area.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-align-items: center;
-justify-content: center;
+}
 
- }
- .bannerLeft{
-    width: 652px;
- }
+.bannerRight img {
+  padding-right: 115px;
+  display: block;
+}
 
 /* bannerPart css End  */
 
-/* All common css start  */
-/* All common css End  */
+/* ServicePart css start  */
+#servicePart{
+  height: 1206px;
+  background: url(../img/Service\ Area.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30px;
+}
+.service_heading{
+  padding: 60px 0;
+}
+.service_heading h6{
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 25px;
+  color: #93F2FF;
+  text-align: center;
+
+}
+.service_heading h3{
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 49px;
+  color: #D6DAF0;
+  text-align: center;
+  margin-top: 10px;
+
+}
+.service_content{
+  flex-wrap: wrap;
+  
+}
+
+.service_content .content{
+  border: 2px solid hsla(231, 46%, 89%, 0.1);
+  border-radius: 10px;
+  clip-path: polygon(81% 0, 89% 14%, 100% 38%, 100% 100%, 0 100%, 0 0);
+
+  box-sizing: border-box;
+  padding: 77px 56px 58px;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 30px;
+
+}
+.service_content .content i{
+  font-size: 120px;
+
+  color: #D6DAF0;
+
+}
+.service_content .content h4{
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 25px;
+  color: #D6DAF0;
+  /* text-align: center; */
+  margin-top: 26px;
+  margin-bottom: 18px;
+}
+.service_content .content p{
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: #D7D9FF;
+  /* text-align: center; */
+  margin-top: 10px;
+  width: 298px;
+}
+/* ServicePart css End  */
 
 /* All common css start  */
 /* All common css End  */
